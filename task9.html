@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>lesson 9</title>
+        <style>
+            .red-square {
+            width: 100px; 
+            height: 100px; 
+            background-color: red; 
+            }
+            .green-circle {
+            width: 100px; 
+            height: 100px;
+            background-color: green; 
+            border-radius: 50%; 
+        }
+        .element{
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        .element2{
+            background-color: rgb(48, 43, 43);
+            font-family: Arial;
+            padding: 10px;
+            width: 350px;
+        }
+        .twitter-box {
+                display: flex;
+                align-items: center; 
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+                width: 400px;
+            }
+            .profile-picture {
+                margin-right: 10px;
+                vertical-align: middle;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+            }
+            .input-box {
+                flex: 1;
+                border: none;
+                padding: 8px;
+                font-size: 16px;
+            }
+            .tweet-button {
+                background-color: #1da1f2;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                padding: 8px 16px;
+                cursor: pointer;
+            }
+
+        .profile-card {
+            width: 200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            display: block;
+        }
+
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .mutual-friends {
+            color: #888;
+            margin-bottom: 10px;
+        } 
+
+        .add-friend-button {
+            background-color: #1877f2;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .search-container {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        .google-logo {
+            width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .shadowed-textbox {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 80px;          
+            width: 500px;          
+            font-size: 16px;       
+            border: none;         
+            outline: none;  
+            margin-bottom: 20px;      
+        } 
+        .buttons{
+            padding: 15px;
+            font-weight: bold;
+            font-family: Arial;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="red-square"></div><br>
+        <div class="green-circle"></div><br>
+        <div class="element">
+            <p style="font-family: Arial; font-weight: bold;"> Satisfied with our service?</p>
+            <button style="font-weight: bold;">Yes</button>
+            <Button style="font-weight: bold;">No</Button>
+        </div><br>
+
+        <div class="element2">
+            <p style="color: white;font-size: 20; font-weight: bold;">Install Youtube Music</p>
+            <p style="color: rgb(141, 144, 150);">Add Youtube Music to your desktop for quick and easy access</p>
+        </div><br>
+
+        <div class="twitter-box">
+            <img src="kitti.jpg" alt="Profile Picture" class="profile-picture">
+            <input type="text" class="input-box" placeholder="What's happening?">
+            <button class="tweet-button">Tweet</button>
+        </div><br>
+
+        <div class="profile-card">
+            <img class="profile-image" src="kitti.jpg" alt="Profile Image">
+            <div style="padding: 10px; font-family: Arial;">
+                <div class="profile-name">Oliver</div>
+                <div class="mutual-friends">2 mutual friends</div>
+                <button class="add-friend-button">Add Friend</button>
+            </div>
+        </div><br>
+
+        <div class="profile-container">
+            <div class="profile-card" style="margin-right: 10px;">
+                <img class="profile-image" src="kitti.jpg" alt="Profile Image 1">
+                <div style="padding: 10px;font-family: Arial;">
+                    <div class="profile-name">Oliver</div>
+                    <div class="mutual-friends">2 mutual friends</div>
+                    <button class="add-friend-button">Add Friend</button>
+                </div> 
+            </div>
+    
+            <div class="profile-card" style="margin-right: 10px;">
+                <img class="profile-image" src="cat.jpg" alt="Profile Image 2">
+                <div style="padding: 10px;font-family: Arial;">
+                    <div class="profile-name">Mimi</div>
+                    <div class="mutual-friends">3 mutual friends</div>
+                    <button class="add-friend-button">Add Friend</button>
+                </div>  
+            </div>
+    
+            <div class="profile-card" style="margin-right: 10px;">
+                <img class="profile-image" src="meao.jpeg" alt="Profile Image 3">
+                <div style="padding: 10px;font-family: Arial;">
+                    <div class="profile-name">Rex</div>
+                    <div class="mutual-friends">4 mutual friends</div>
+                    <button class="add-friend-button">Add Friend</button>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="search-container">
+            <img src="logo.png" alt="Google Logo" class="google-logo"><br>
+            <input type="text" class="shadowed-textbox" placeholder="Search Google or type a URL"><br>
+            <button class="buttons">Google Search</button>
+            <button class="buttons">I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>
